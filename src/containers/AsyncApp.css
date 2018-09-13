@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "bpmn";
+    src: url("/bpmn.woff") format('woff');
+}
+
+html {
+    overflow: hidden;
+} 
+
+#flow-diagram {
+    width: 100%;
+    height: 100%;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}   
+
+.diagram-view {
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.diagram {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.sm-list {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+svg .svg-state {
+    cursor: pointer;
+}
+
+svg .svg-state rect.box {
+    stroke: #333;
+    fill: #fffff7;
+    stroke-width: 2;
+    fill-opacity: 1.0;
+}
+
+svg .svg-state .shadow {
+    fill: #000;
+    stroke-width: 0;
+    fill-opacity: 0.3;
+    filter: url(#blur8);
+}
+
+svg .svg-state text {
+    fill: #333;
+    font-weight: 100;
+    stroke-width: 0;
+    font-family: helvetica;
+    font-size: 0.8em;
+}
+
+svg .svg-state .circle-black {
+    fill: #777;
+    stroke: transparent;
+    stroke-width: 0;
+    fill-opacity: 1;
+}
+
+svg .svg-state .circle-white {
+    fill: #fffff7;
+    stroke: #777;
+    stroke-width: 3;
+    fill-opacity: 1;
+}
+
+svg .svg-transition .transition {
+    stroke: #555;
+    stroke-width: 2;
+    fill: transparent
+}
+
+svg .svg-transition .fat-path {
+    stroke: #fff;
+    stroke-width: 10;
+    opacity: 0.2;
+    fill: transparent;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+svg .svg-transition .arrow {
+    stroke: #555;
+    stroke-width: 2;
+    fill: #555;
+}
+
+svg .svg-transition .shadow {
+    fill: transparent;
+    stroke-width: 4px;
+    fill-opacity: 0.5;
+    -webkit-filter: url(#blur8);
+    filter: url(#blur8);
+    stroke: #fff;
+}
+
+svg .svg-transition text {
+    cursor: pointer;
+    font-family: helvetica;
+    font-size: 0.8em;
+}
+
+svg .toolbox {
+}
+
+svg .toolbox text {
+    font-family: bpmn;
+    font-size: 16px;
+    fill: #000;
+    font-weight: 100;
+    stroke: none;
+}
+
+svg .toolbox text.text-glow {
+    fill: #fff;
+    stroke: #fff;
+    font-weight: 900;
+    stroke-width: 2;
+    pointer-events: all;
+}
+
+svg .drag-line {
+    stroke: #ff7400;
+    fill: none;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+}
+
+.items-list {
+    position: absolute;
+    display: block;
+    left: 100px;
+    top: 400px;
+    max-height: 200px;
+    min-width: 140px;
+    max-width: 400px;
+    overflow: auto;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    border-radius: 3px;
+}
+
+.items-list ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.items-list li {
+    list-style-type: none;
+    font-family: helvetica;
+    font-size: 0.8em;
+    padding: 2px 8px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.items-list li.li-selected {
+    background-color: #555;
+    color: #fff;
+}
+
+.items-list li:hover {
+    background-color: #777;
+    color: #fffff7;
+}
+
+.items-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    background-color: #F5F5F5;
+}
+
+.items-list::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.items-list::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.4);
+}
+
+#tasks-list, #events-list {
+}

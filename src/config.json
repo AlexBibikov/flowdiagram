@@ -1,0 +1,37 @@
+{
+    "api": {
+        "list": "http://localhost:8088/api/diagrams",
+        "load": "http://localhost:8088/api/diagram/#",
+        "save": "http://localhost:8088/api/diagram"
+    },
+    "figure": {
+        "stick": 8,
+        "start": {
+            "size": 30
+        },
+        "end": {
+            "size": 30  
+        },
+        "gateway": {
+            "fill": ["#fffff7", "#ff7400"],
+            "size": 50
+        },
+        "transition": {
+            "fill": ["#af0000", "#af00af"],
+            "stroke": ["#00afaf", "#afaf00"],
+            "size": 0
+        },
+        "default": {
+            "fill": ["#fffff7", "#ff7400"],
+            "stroke": ["#777777", "#000000"],
+            "size": [160, 80]
+        }
+    },
+    "label": {
+        "fill": ["transparent", "#ffffff"],
+        "stroke": ["transparent", "#ff7400"]
+    },
+    "transition": {
+        "stroke": ["#555", "#000"]
+    }
+}

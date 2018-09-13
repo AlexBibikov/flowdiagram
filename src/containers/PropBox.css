@@ -1,0 +1,37 @@
+#props-list {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 25%;
+    min-width: 300px;
+    max-width: 600px;
+    overflow: auto;
+    background-color: #fafafa;
+    border: 1px solid #999;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    opacity: 0.8;
+}
+
+#props-list .props-toolbar .props-title {
+    color: #f00;
+}
+
+#props-list .props-toolbar .button-close {
+    width: 20px;
+    border: 1px outset #aaa;
+    float: right;
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+#props-list .props-toolbar .button-close:hover {
+    background-color: #fff;
+}
+
+#props-list .props-toolbar .button-close:before {
+    content: '+';
+}
